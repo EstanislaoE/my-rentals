@@ -17,6 +17,17 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0  bg-opacity-60"></div>
 
+      {/* --- Gradient Overlay for Fade Effect --- */}
+      <div
+        className="absolute inset-0"
+        // Applying a custom gradient directly
+        style={{
+          background:
+            "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.8) 100%)",
+        }}
+      ></div>
+      {/* -------------------------------------- */}
+
       {/* --- Photo Credits Overlay --- */}
       <div className="absolute bottom-4 right-4 z-10 text-white text-xs bg-gray-500 p-1 rounded">
         Photo by{" "}
