@@ -34,7 +34,7 @@ const FeaturesSection = () => {
       <div className="max-w-4xl xl:max-w-6xl mx-auto">
         <motion.h2
           variants={itemVariants}
-          className="text-3xl font-bold text-teal-300 text-center mb-12 w-full sm:-2/3 mx-auto"
+          className="text-3xl font-bold text-black text-center mb-12 w-full sm:-2/3 mx-auto"
         >
           Turn aroun dtiem effient afafd ffwef fasdff
         </motion.h2>

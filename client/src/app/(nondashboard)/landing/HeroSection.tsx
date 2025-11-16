@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-screen">
       <Image
-        src="/patrick-hendry-mevy.jpg"
+        src="/patrick2.jpg"
         alt="Rentiful Rental Platform Hero Section"
         fill
         className="object-cover object-center"
@@ -18,10 +18,10 @@ const HeroSection = () => {
       <div className="absolute inset-0  bg-opacity-60"></div>
 
       {/* --- Photo Credits Overlay --- */}
-      <div className="absolute bottom-4 right-4 z-10 text-white text-xs bg-black p-1 rounded">
+      <div className="absolute bottom-4 right-4 z-10 text-white text-xs bg-gray-500 p-1 rounded">
         Photo by{" "}
         <a
-          href="https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          href="https://unsplash.com/photos/stone-steps-ascend-through-a-lush-moss-covered-forest-x1dBqw0rqmg"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-white"
