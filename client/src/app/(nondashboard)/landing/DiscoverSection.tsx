@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -36,30 +37,31 @@ const DiscoverSection = () => {
             Discover
           </h2>
           <p className="mt-4 text-lg text-gray-600">Find what you nt retl</p>
+          <p className="mt-2 text-gray-500 max-w-3xl mx-auto">
+            Search for yoru dm property fsalfjk afsljkf asdlkfj asfdlkj afsdl
+            kjasf asjfdl af lkfalk lkasdf
+          </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
-          {[0, 1, 2].map((index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <FeatureCard
-                imageSrc={`/landing-search${3 - index}.png`}
-                title={
-                  [
-                    "Trustworthy and Verified Listings",
-                    "Browse Rentl Listings with Ease",
-                    "Simplify your Ren Search with Advanced",
-                  ][index]
-                }
-                description={
-                  [
-                    "Dicvr user views ",
-                    "Access to reviews",
-                    "Verified ensure quali",
-                  ][index]
-                }
-                linkText={["Explore", "Search", "Discover"][index]}
-                linkHref={["/explore", "/search", "/discover"][index]}
-              />
-            </motion.div>
+          {[
+            {
+              imageSrc: "/landing-icon-wand.png",
+              title: "Search for Properties",
+              description:
+                "Browse through our extensive collection of rntal faslff",
+            },
+            {
+              imageSrc: "/landing-icon-calendar.png",
+              title: "Book ntal ",
+              description: "nsive collection of rntal faslff",
+            },
+            {
+              imageSrc: "/landing-icon-wand.png",
+              title: "Search for Properties",
+              description: "nsive collection of rntal faslff",
+            },
+          ].map((CardContent, index) => (
+            <motion.div key={index} variants={itemVariants}></motion.div>
           ))}
         </div>
       </div>
@@ -67,7 +69,7 @@ const DiscoverSection = () => {
   );
 };
 
-const FeatureCard = ({
+const DiscoverCard = ({
   imageSrc,
   title,
   description,
