@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
@@ -39,6 +41,24 @@ const HeroSection = () => {
           <h1 className="text-5xl font-bold text-white mb-4">
             Start your initti
           </h1>
+          <p className="text-2xl text-white mb-8">
+            Explore different Vista Points
+          </p>
+          <div className="flex justify-center">
+            <Input
+              type="text"
+              value="Search query"
+              onChange={() => {}}
+              placeholder="Search by Industry"
+              className="w-full text-white! max-w-lg rounded-none rounded-l-xl borbg-der-none teal-400 h-12 "
+            />
+            <Button
+              onClick={() => {}}
+              className="bg-primary-400 text-white rounded-none rounded-r-xl border-none hover:bg-green-500 h-12"
+            >
+              Search
+            </Button>
+          </div>
         </div>
       </motion.div>
     </div>
