@@ -36,20 +36,14 @@ const FeaturesSection = () => {
           variants={itemVariants}
           className="text-3xl font-bold text-black text-center mb-12 w-full sm:-2/3 mx-auto"
         >
-          Turn aroun dtiem effient afafd ffwef fasdff
+          ML on the field.
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
           {[0, 1, 2].map((index) => (
             <motion.div key={index} variants={itemVariants}>
               <FeatureCard
                 imageSrc={`/landing-search${3 - index}.png`}
-                title={
-                  [
-                    "Trustworthy and Verified Listings",
-                    "Browse Rentl Listings with Ease",
-                    "Simplify your Ren Search with Advanced",
-                  ][index]
-                }
+                title={["Study Case 1: ", "Case 2 ", "Case 3 "][index]}
                 description={
                   [
                     "Dicvr user views ",
